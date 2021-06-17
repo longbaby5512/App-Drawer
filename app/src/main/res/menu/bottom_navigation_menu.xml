@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/info"
+        android:enabled="true"
+        android:icon="@drawable/ic_info"
+        android:title="Infomation" />
+    <item
+        android:id="@+id/app_drawer"
+        android:enabled="true"
+        android:icon="@drawable/ic_drawer"
+        android:title="App Drawer" />
+</menu>
