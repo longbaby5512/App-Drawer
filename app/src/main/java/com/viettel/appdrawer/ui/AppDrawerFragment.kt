@@ -40,8 +40,8 @@ class AppDrawerFragment : Fragment() {
             val app = parent.getItemAtPosition(position) as AppInfo
             val intent = requireActivity().packageManager.getLaunchIntentForPackage(app.info.packageName)
             if (intent == null) {
-                Toast.makeText(requireActivity().applicationContext, "No launcher attached with this app", Toast.LENGTH_SHORT)
-                    .show()
+                Toast.makeText(requireActivity().applicationContext,
+                    "No launcher attached with this app",Toast.LENGTH_SHORT).show()
             } else {
                 startActivity(intent)
             }
@@ -75,8 +75,8 @@ class AppDrawerFragment : Fragment() {
 
         val adapter = AppAdapter(requireContext(), R.layout.app_item_layout, apps)
         appList.adapter = adapter
-        Snackbar.make(appList, apps.size.toString() + " applications loaded", Snackbar.LENGTH_SHORT)
-            .show()
+        Snackbar.make(appList, apps.size.toString() + " applications loaded",
+            Snackbar.LENGTH_SHORT).show()
 
     }
 }

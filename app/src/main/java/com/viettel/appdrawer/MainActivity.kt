@@ -2,12 +2,10 @@ package com.viettel.appdrawer
 
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.ActionBar
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.google.android.material.bottomnavigation.BottomNavigationMenu
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.viettel.appdrawer.ui.AppDrawerFragment
 import com.viettel.appdrawer.ui.InformationFragment
@@ -37,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         toolbar.title = "Information"
-        loadFragment(InformationFragment());
+        loadFragment(InformationFragment())
 
     }
 

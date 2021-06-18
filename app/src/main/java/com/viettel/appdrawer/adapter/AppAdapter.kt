@@ -13,9 +13,11 @@ import com.viettel.appdrawer.R
 import com.viettel.appdrawer.model.AppInfo
 
 
-class AppAdapter(context : Context, @LayoutRes private val resourceId : Int, private val apps: List<AppInfo>) : ArrayAdapter<AppInfo>(context, resourceId, apps ) {
+class AppAdapter(context : Context,
+                 @LayoutRes private val resourceId : Int,
+                 private val apps: List<AppInfo>)
+    : ArrayAdapter<AppInfo>(context, resourceId, apps) {
     private val packageManager = context.packageManager
-
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         val currentApp = apps[position]
