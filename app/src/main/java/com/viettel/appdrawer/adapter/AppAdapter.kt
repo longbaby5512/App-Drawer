@@ -11,7 +11,6 @@ import androidx.annotation.LayoutRes
 import com.viettel.appdrawer.R
 import com.viettel.appdrawer.model.AppInfo
 import java.util.*
-import kotlin.math.log
 
 
 class AppAdapter(context : Context,
