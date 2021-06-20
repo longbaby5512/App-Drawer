@@ -78,6 +78,7 @@ class AppAdapter(context : Context,
                     }
                     constraint == "" -> {
                         apps = appsClone
+                        notifyDataSetChanged()
                     }
                     else -> {
                         apps = results.values as List<AppInfo>
